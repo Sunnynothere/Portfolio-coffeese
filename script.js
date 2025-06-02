@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         document.querySelector('.content-wrapper')?.insertAdjacentHTML('afterbegin', navHTML);
     }
+    
 
     // Elementos del DOM
     const sections = document.querySelectorAll('section');
