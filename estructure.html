@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeese Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true">
+        <filter id='noiseFilter'>
+            <feTurbulence
+                type='fractalNoise'
+                baseFrequency='6.5'
+                numOctaves='5'
+                stitchTiles='stitch'
+                result='turb'
+            />
+            <feColorMatrix type='saturate' values='0' in='turb' result='monoNoise'/>
+
+            <feComponentTransfer in='monoNoise' result='alphaNoise'>
+                <feFuncA type='linear' slope='0.4' intercept='0'/> </feComponentTransfer>
+
+            <feBlend mode='overlay' in='alphaNoise' in2='SourceGraphic' />
+        </filter>
+    </svg>
+    <img class="blur-shape" src="./assets/blur-shape.png">
+
+    <div class="content-wrapper"> 
+        
+        <section id="inicio" class="welcome active">
+            <div class="bean-container">
+                <div class="bean-name">
+                    <img src="./assets/bean-inicio.png" />
+                    <div class="bean-text">
+                        <h1>SOL</h1>
+                        <h2>WEB DEVELOPER</h2>
+                    </div>
+                </div>
+            </div>
+            <p class="introduction">Pasion por el Front-End y el diseño. Mi meta es crear interfaces de usuario creativas y amigables. Habilidad de adaptacion a diferentes frameworks.</p>
+        </section>
+
+        <section id="proyectos" class="proyectos">
+            <div class="square">
+                <div class="inside-square-data">
+                    <ul class="proyectos-list right">
+                        <li><a href="#" class="active">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                    </ul>
+                    <div class="description">
+                        <h2>PROYECTO 1</h2>
+                        <p>Cargando descripción...</p>
+                    </div>
+                    
+                    <div class="project-link right">
+                        <a href="#" class="github-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                        </a>
+                        <a href="#" class="demo-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-image"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="habilidades">
+            <div class="skills-icons">
+                <div class="icons-row"> 
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                </div>
+                <div class="icons-row"> 
+                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-figma"></i>
+                    <i class="fa-brands fa-sass"></i>
+                </div>
+            </div>
+
+            <div class="skills-image">
+                <img src="./assets/bean-skills.png" alt="Skills illustration">
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contact-info">
+                <img src="./assets/bean-contact.png" />
+                <h1>grigonisol@hotmail.com</h1>
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+            </div>
+
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

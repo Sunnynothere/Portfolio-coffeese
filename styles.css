@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* BACKGROUND-COLOR */
+
+body {
+    background-color: #fbca32; 
+    width: 100%;
+    height: 100vh;
+    filter: url(#noiseFilter);
+    z-index: auto;
+}
+
+.blur-shape {
+    width: 650px;
+    position: absolute;
+    bottom: 20%;
+    left: 40%;
+    filter: blur(100px);
+    z-index: -1;
+} 
+
+.content-wrapper {
+    margin: 20px 120px;
+    color: #fff;
+}
+
+/* Hide all sections by default */
+section {
+    display: none;
+}
+
+/* Show active section */
+section.active {
+    display: block;
+}
+
+/* Active link styling */
+.nav-item a.active {
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+
+.nav-container {
+    color: #fff;
+    font-family: 'Glory', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-item a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.change-id {
+    align-self: flex-end;
+}
+
+/* INICIO */
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding-top: 200px;
+}
+
+.bean-container {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+}
+
+.bean-name {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.bean-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.bean-name h1, .bean-name h2 {
+    font-family: 'Glory', sans-serif;
+    margin: 0;
+}
+
+.bean-name h1 {
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 1;
+} 
+
+.bean-name h2 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.bean-name img {
+    width: 240px;
+}
+
+.introduction {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 50px auto 0;
+    max-width: 800px;
+}
+
+/* PROJECTS */
+
+.proyectos {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    width: 100%; 
+    padding: 200px;
+    box-sizing: border-box;
+}
+
+.square {
+    width: 800px;
+    height: 400px;
+    border: 10px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    margin: 0 auto; 
+}
+
+.inside-square-data {
+    width: 100%;;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.proyectos-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+}
+
+.inside-square-data a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.description {
+    padding: 20px;
+    flex-grow: 1; 
+}
+
+.description h2 {
+    font-family: 'Glory', sans-serif;
+    font-size: 30px;
+}
+
+.description p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.project-link {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.project-link i {
+    font-size: 45px;
+    color: #fff;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 4rem;
+    padding-top: 10rem;
+    margin: 0 auto;
+}
+
+.skills-icons {
+    display: flex;
+    flex-direction: column; 
+    gap: 4rem;
+}
+
+.icons-row {
+    display: flex;
+    gap: 4rem;
+    justify-content: flex-end; 
+}
+
+.skills-image {
+    align-self: flex-end; 
+    margin-top: auto; 
+}
+
+.habilidades img {
+    width: 350px;
+}
+
+.habilidades i {
+    font-size: 120px;
+}
+
+/* CONTACTO */
+
+.contact-info {
+    text-align: center;
+    padding: 250px;
+}
+
+.contact-info img {
+    width: 250px;
+}
+
+.contact-info h1 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.contact-info i {
+    font-size: 40px;
+    margin-right: 20px;
+}
