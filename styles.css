@@ -526,3 +526,119 @@ section.active {
     }
 
 }
+
+@media (max-width: 430px) {
+    .content-wrapper {
+        margin: 20px 80px;
+    }
+
+        .nav-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px; 
+        padding: 0;
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    .nav-item li {
+        margin: 0;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .change-id {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .introduction {
+        font-size: 18px;
+    }
+    
+    .bean-name h1 {
+        font-size: 48px;
+    }
+
+    .bean-name h2 {
+        font-size: 32px;
+    }
+
+    .inside-square-data a {
+        font-size: 16px;
+    }
+
+    .description h2 {
+        font-size: 20px;
+    }
+
+    .introduction {
+        font-size: 14px;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        padding-top: 5rem;
+    }
+    
+    .skills-icons {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .icons-row {
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .icons-row i {
+        font-size: 2.5rem;
+    }
+    
+    .skills-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .habilidades img {
+        width: 100px;
+        padding-top: 40%;
+    }
+
+    .contact-info {
+        margin-top: 3rem;
+        padding: 0 1rem;
+        margin-top: 150px;
+    }
+    
+    .contact-info h1 {
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-info i {
+        font-size: 24px;
+        margin: 5px auto;
+    }
+
+    .contact-info a {
+        cursor: pointer;
+    }
+
+    .contact-info img, .habilidades img {
+        width: 150px;
+    }
+}
