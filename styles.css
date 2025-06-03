@@ -402,6 +402,11 @@ section.active {
         font-size: 40px;
         margin-right: 20px;
     }
+
+    .content-wrapper {
+        margin: 20px 120px;
+        color: #fff;
+    }
 }
 
 @media (max-width: 480px) {
@@ -458,6 +463,10 @@ section.active {
         font-size: 20px;
     }
 
+    .introduction {
+        font-size: 14px;
+    }
+
     .habilidades {
         flex-direction: column;
         padding-top: 5rem;
@@ -511,4 +520,10 @@ section.active {
     .contact-info img, .habilidades img {
         width: 150px;
     }
+
+    .content-wrapper {
+    margin: 20px 80px;
+    color: #fff;
+    }
+
 }
