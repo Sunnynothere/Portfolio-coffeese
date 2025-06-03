@@ -494,7 +494,7 @@ section.active {
 
     .habilidades img {
         width: 100px;
-        padding-top: 80%;
+        padding-top: 40%;
     }
 
     .contact-info {
@@ -522,7 +522,7 @@ section.active {
     }
 
     .content-wrapper {
-    margin: 20px 80px;
+    margin: 60px 80px;
     color: #fff;
     }
 
